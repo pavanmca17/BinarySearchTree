@@ -9,7 +9,7 @@ namespace BinarySearchTree
     class Node
     {
       
-        public int Value { get; set; }
+        public int value { get; set; }
 
         public Node left { get; set; }
 
@@ -17,7 +17,7 @@ namespace BinarySearchTree
 
         public Node(int val)
         {
-            Value = val;
+            value = val;
             left = null;
             right = null;
 
