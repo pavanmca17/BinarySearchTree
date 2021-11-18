@@ -34,9 +34,11 @@ namespace BinarySearchTree
             Console.WriteLine("Descendingorder");
             tree.Descendingorder(root);
 
+            //Call to Preorder
             Console.WriteLine("Preorder");
             tree.Preorder(root);
 
+            //Call to Postorder
             Console.WriteLine("Postorder");
             tree.Postorder(root);
 
