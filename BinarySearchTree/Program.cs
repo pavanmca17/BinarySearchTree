@@ -9,9 +9,9 @@ namespace BinarySearchTree
         static void Main(string[] args)
         {
             Console.WriteLine("Binary Search Tree");
-            Console.WriteLine("Please Enter the Starting Value for randoming number genertation Range");
+            Console.WriteLine("Please Enter the Starting Offset for random number genertation");
             int startNumber = int.Parse(Console.ReadLine());           
-            Console.WriteLine("Please Enter the Ending Value for randoming number genertation Range");
+            Console.WriteLine("Please Enter the Number of elements(Range) for random number genertation");
             int endNumber = int.Parse(Console.ReadLine());        
             Random rnd = new Random();
             List<int> numbers = Enumerable.Range(startNumber, endNumber).OrderBy(_ => rnd.Next()).ToList();
