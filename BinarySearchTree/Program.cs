@@ -30,10 +30,10 @@ namespace BinarySearchTree
             List<int> numbers = Enumerable.Range(startNumber, endNumber).OrderBy(_ => rnd.Next()).ToList();
 
 
-            // TimeSpan timeSpan = new TimeSpan();
-
             Tree tree = new Tree();
-            for (int i = 0; i < numbers.Count(); i++)
+            int count = numbers.Count();
+
+            for (int i = 0; i < count; i++)
             {
                 tree.Add(numbers[i]);
             }
@@ -41,13 +41,15 @@ namespace BinarySearchTree
             // get refernece to the root node
             var root = tree.ReturnRoot();
 
+            //Call to Descendingorder
+            Console.WriteLine("-------Start of Descendingorder------");
+            tree.Descendingorder(root);
+            Console.WriteLine("-------Stop of Descendingorder------");
+
+
             //Call to In-Order
             Console.WriteLine("InOrder");
             tree.Inorder(root);
-
-            //Call to Descendingorder
-            Console.WriteLine("Descendingorder");
-            tree.Descendingorder(root);
 
             //Call to Preorder
             Console.WriteLine("Preorder");

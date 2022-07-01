@@ -84,7 +84,8 @@ namespace BinarySearchTree
             return top;
         }
 
-        //An inorder traversal visits all the nodes in a BST in ascending order of the node key values.
+        //An inorder traversal visits all the nodes in a BST in ascending order
+        //of the node key values.
         // Display the elements in ascending order
         public void Inorder(Node Root)
         {
@@ -131,6 +132,19 @@ namespace BinarySearchTree
                 Descendingorder(Root.left);
                 
             }
+        }
+
+        public void flatten(Node node)
+        {
+            // return if root is null
+            if (node == null)
+                return;
+
+            // if it is a leaf node
+            if (node.left == null &&  node.right == null)
+                return;
+
+
         }
 
 
