@@ -29,9 +29,8 @@ namespace BinarySearchTree
             Random rnd = new Random();
             List<int> numbers = Enumerable.Range(startNumber, endNumber).OrderBy(_ => rnd.Next()).ToList();
 
-
-            Tree tree = new Tree();
-            int count = numbers.Count();
+            var tree = new Tree();
+            var count = numbers.Count();
 
             for (int i = 0; i < count; i++)
             {

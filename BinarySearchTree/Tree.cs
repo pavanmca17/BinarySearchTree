@@ -8,7 +8,7 @@ namespace BinarySearchTree
 {
     class Tree
     {
-        Node top;
+        public Node top;
         public Tree()
         {
             top = null;
@@ -143,13 +143,7 @@ namespace BinarySearchTree
             // if it is a leaf node
             if (node.left == null &&  node.right == null)
                 return;
-
-
         }
-
-
-
-
 
     }
 }
